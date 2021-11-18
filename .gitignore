@@ -1,5 +1,7 @@
 # IntelliJ IDEA stuff
 .idea/
+out/
+src/META-INF/
 
 # Compiled class file
 *.class
