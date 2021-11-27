@@ -40,11 +40,12 @@ public class Main {
                             "real@email.com@haha",
                             "0018003825968",
                             "www.example.com",
-                            "i#love-spec!&l'ch*rac+er$@email.ca" };
+                            "i#love-spec!&l'ch*rac+er$@email.ca",
+                            "a-real@email" };
         for (String x : emails) {
             System.out.print(x + ": ");
             //!#$%&'*+-/=?^_`{|}~
-            System.out.println((Pattern.matches("[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+", x) ? "" : "in") + "valid");
+            System.out.println((Pattern.matches("[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+\\.[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+", x) ? "" : "in") + "valid");
         }
     }
 }

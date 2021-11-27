@@ -33,4 +33,5 @@ real@email.com@haha: invalid
 0018003825968: invalid
 www.example.com: invalid
 i#love-spec!&l'ch*rac+er$@email.ca: valid
+a-real@email: invalid
 ```
